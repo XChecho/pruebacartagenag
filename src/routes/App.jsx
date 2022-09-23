@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //Pages
 import Home from '@pages/Home';
-// import ProductItem from '@pages/ProductItem';
+import ProductItem from '@pages/ProductItem';
 import ProductList from '@pages/ProductList';
-// // import NotFound from '@pages/NotFound';
+
 
 //Containers
 import Layout from '@containers/Layout';
@@ -21,9 +21,8 @@ const App = () => {
             <Navbar/>
             <Routes className='absolute'>
                 <Route exact path="/" element={<Home />} />
-                <Route exact path="/list" element={<ProductList />} />
-                {/* <Route exact path="/item" element={<ProductItem />} /> */}
-                {/* <Route path="*" element={<NotFound />} /> */}
+                <Route exact path="/product" element={<ProductList />} /> 
+                <Route exact path="/product/:id" element={<ProductItem />} />
             </Routes>
             <Footer />
         </Layout>

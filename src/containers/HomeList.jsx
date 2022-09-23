@@ -8,7 +8,7 @@ const API = 'https://fakestoreapi.com/products?limit=4';
 
 const HomeList = () => {
     
-    const products = useGetProducts(API);
+    const {products,loading} = useGetProducts(API);
 
     return (
         <section>

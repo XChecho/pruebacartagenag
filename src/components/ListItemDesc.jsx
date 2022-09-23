@@ -7,7 +7,7 @@ import logoAddCar from '@assets/icons/shopping-cart.svg';
 const ListItemDesc = ({product}) => {
 
     return (
-    	<div className="w-63e h-auto px-8 py-2 border-solid border-third rounded border-4 ">
+    	<div className="w-62 h-auto px-8 py-2 border-solid border-third rounded border-4 ">
 			<p className='text-center text-lag'>{product.title}</p>
 			<div className='flex justify-center'>
 				<img src={product.image} alt={product.title} className='w-auto h-60 rounded-2xl'/>
