@@ -1,14 +1,13 @@
 import React from 'react'
+import getProductList from '../services/getProductList';
 
 //components
 import ItemDesc from '@components/ItemDesc';
 import useGetProducts from '@hooks/useGetProducts';
 
-const API = 'https://fakestoreapi.com/products?limit=4';
-
 const HomeList = () => {
     
-    const {products,loading} = useGetProducts(API);
+    const products = useGetProducts(getProductList);
 
     return (
         <section>
