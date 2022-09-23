@@ -25,7 +25,7 @@ const useGetProducts = (getProductList,setLoading) => {
 	const getData = async () => {
 		const response = await axios.get(getProductList);
 		setProducts(response.data);
-		console.log(response);
+		console.log(response,"response hooks.useGetProducts");
 		// setLoading(false)
 	}
 	

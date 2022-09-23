@@ -1,10 +1,10 @@
-import conectionAPI from "../api"
+import conectionAPI from "../api/index";
 
-const path = 'products/'
+const path = 'products'
 
 const getProductList = () => {
     
-    return conectionAPI(path).catch(console.error)
+    return conectionAPI(path)
 }
 
-export default getProductList;
+export default getProductList;  
