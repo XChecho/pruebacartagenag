@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import AppContext from "@context/AppContext";
-import close from "@icons/icon_close.png";
+import close from "@assets/icons/icon_close.png";
 
 
 const MyOrderItem = ({ products, addItem, removeItem }) => {
