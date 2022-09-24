@@ -22,7 +22,13 @@ const MyOrder = () => {
 
 	const handleRemoveAll = state => {
 		removeAllCart(state);
-		swal("La compra fue un éxito");
+		swal({
+			title: 'Proceso de compra finalizado',
+			text: `El proceso de compra finalizó el total de la compra fue $${sumTotalPrice()}`,
+			icon: 'success',
+			button: 'Aceptar',
+			timer: "5000"
+		});
 	}
 
 	return (
