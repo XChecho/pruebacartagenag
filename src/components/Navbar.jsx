@@ -28,8 +28,7 @@ const Navbar = () => {
 					<img src={logoAddCar} alt="" className='place-items-center' />
                     {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
 			</div>
-            {/* {state.orderIsOpen && <MyOrder />} */}
-            <MyOrder/>
+            {state.orderIsOpen && <MyOrder />}
         </nav>
     );
 }

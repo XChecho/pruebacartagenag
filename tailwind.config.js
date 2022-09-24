@@ -33,14 +33,17 @@ module.exports = {
       },
       gridTemplateColumns:{
         'auto-fill': 'repeat(auto-fill, 320px)',
-        'auto1fr': 'auto 1fr',
-        'at1fatat' : 'auto 1fr auto auto',
+        'auto1fr': '5fr 2fr 1fr',
+        'at1fatat' : 'auto 1fr 0.5fr auto auto',
       },
       width : {
-        '128':'30rem'
+        '140':'35rem',
+        '160':'40rem',
+        '168':'42rem',
+
       },
       height :{
-        '128': '30rem'
+        '120': '30rem'
       },
       textShadow: {
         '2xl': '1px 1px 5px rgb(33 34 43 / 20%)',
