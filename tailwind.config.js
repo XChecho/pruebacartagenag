@@ -31,6 +31,14 @@ module.exports = {
       screens: {
         'small': '320px'
       },
+      gridTemplateColumns:{
+        'auto-fill': 'repeat(auto-fill, 320px)',
+        'auto1fr': 'auto 1fr',
+        'at1fatat' : 'auto 1fr auto auto',
+      },
+      height :{
+        '128': '30rem'
+      },
       textShadow: {
         '2xl': '1px 1px 5px rgb(33 34 43 / 20%)',
         '3xl': '0 0 3px rgba(0, 0, 0, .8), 0 0 5px rgba(0, 0, 0, .9)',

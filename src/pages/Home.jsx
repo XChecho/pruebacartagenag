@@ -13,7 +13,6 @@ const Home = () => {
             <Banner />
             <HomeList />
             <AboutUs />
-            
         </div>
     );
 }

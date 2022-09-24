@@ -17,7 +17,7 @@ const Banner = () => {
                 </div>
                 <div 
                     style={{backgroundImage: `url(${pictureBanner})`}} 
-                    className="w-full h-96 bg-cover lg:bg-fill"
+                    className="w-full h-96 bg-cover"
                     // w-full h-full lg:h-full lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center
                 ></div>
             </div>

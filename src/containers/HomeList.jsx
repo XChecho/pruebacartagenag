@@ -1,24 +1,22 @@
 import React from 'react'
-import getProductList from '../services/getProductList';
-import fetchData from '../api';
 
 //components
-import ItemDesc from '@components/ItemDesc';
-import useGetProducts from '@hooks/useGetProducts';
-
-const API = 'https://fakestoreapi.com/products'
+import HomeListItem from '@components/HomeListItem';
+import useGetProductsHomeList from '@hooks/useGetProductsHomeList';
 
 const HomeList = () => {
     
-    const products = useGetProducts(fetchData);
+    const {products,loading} = useGetProductsHomeList();
 
     return (
         <section>
-            <div className='grid grid-cols-4 gap-6 place-content-center my-2.5'>
-                {products.map(product => {
-                    return <ItemDesc product ={product} key={product.id} />;
-                })}
-            </div> 
+            {loading ? <h1>Cargando</h1> :
+                <div className='flex justify-around gap-6 my-2.5'>
+                    {products.map(product => {
+                        return <HomeListItem product = {product} key={product.id} />;
+                    })}
+                </div>
+            }
         </section>
     );
 }

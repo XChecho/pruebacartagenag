@@ -1,26 +1,25 @@
 import React, {useState} from 'react'
-import getProductList from '../services/getProductList';
 
 //Components
-import ListItemDesc from '@components/ListItemDesc';
+import ProductListItem from '@components/ProductListItem';
 
 //Hooks
-import useGetProducts from '@hooks/useGetProducts';
+import useGetProductsList from '@hooks/useGetProductsList';
 
 const ProductList = () => {
-    // console.log(getProductList,"ProductList.jsx")
-    const [loading,setLoading] = useState(true);
-    const products = useGetProducts(getProductList,setLoading);
+
+    const {products,loading} = useGetProductsList();
     
     return(
         <div className='w-full h-auto mt-12 flex-column'>
-            {console.log(products,"Products ProductList")}
-            <h1 className='h-auto text-xlg text-center'>Listado de productos</h1>
-            <div className='grid grid-cols-5 gap-6 place-content-center my-2.5 mx-2'>
+            <h1 className='h-auto text-3xl text-center font-bold'>Listado de productos</h1>
+            {loading ? <h1>Cargando</h1> :
+            <div className='grid grid-cols-auto-fill gap-6 place-content-center py-2.5 bg-gray-400'>
                 {products.map(product => {
-                    return <ListItemDesc product ={product} key={product.id} />;
+                    return <ProductListItem product ={product} key={product.id} />;
                 })}    
             </div>
+            }
         </div>
     );
 }
