@@ -27,7 +27,7 @@ const App = () => {
               <Routes className='absolute'>
                   <Route exact path="/" element={<Home />} />
                   <Route exact path="/product" element={<ProductList />} /> 
-                  <Route exact path="/exampleItem" element={<ProductItem />} />
+                  <Route exact path="/product/:id" element={<ProductItem />} />
               </Routes>
               <Footer />
           </Layout>

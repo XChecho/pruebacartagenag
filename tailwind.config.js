@@ -43,7 +43,11 @@ module.exports = {
 
       },
       height :{
+        '100':'400px',
         '120': '30rem'
+      },
+      maxHeight :{
+        '160':'40rem',
       },
       textShadow: {
         '2xl': '1px 1px 5px rgb(33 34 43 / 20%)',
@@ -56,5 +60,7 @@ module.exports = {
     extend: {
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+  ],
 }

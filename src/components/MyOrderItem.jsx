@@ -3,14 +3,14 @@ import AppContext from "@context/AppContext";
 import close from "@icons/icon_close.png";
 
 
-const MyOrderItem = ({ products }) => {
+const MyOrderItem = ({ products, addItem, removeItem }) => {
 	
 	const { removeFromCart } = useContext(AppContext);
 
 	const handleRemove = products => {
 		removeFromCart(products);
 	}
-
+	
 	return (
 		<div className="grid grid-cols-at1fatat gap-4 mb-6 items-center">
 			<figure className='m-0'>
@@ -18,9 +18,9 @@ const MyOrderItem = ({ products }) => {
 			</figure>
 			<p className='text-primary'>{products.title}</p>
 			<div className=' w-22 h-10 justify-between content-center left-1 px-2 static border-solid border-second border-2 rounded-md flex'>
-				<button className='text-med font-semibold'>-</button>
-				<span className='flex items-center'>cant</span>
-				<button className='text-med font-semibold'>+</button>
+				<button className='text-med font-semibold' onClick={removeItem}>-</button>
+				<span className='flex items-center'>{products.quantity}</span>
+				<button className='text-med font-semibold' onClick={addItem}>+</button>
 			</div>
 			<p className='text-med font-bold' >${products.price}</p>
 			<img src={close} alt="close" onClick={() => handleRemove(products)} />

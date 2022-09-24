@@ -4,11 +4,11 @@ import React, {useState} from 'react'
 import ProductListItem from '@components/ProductListItem';
 
 //Hooks
-import useGetProductsList from '@hooks/useGetProductsList';
+import useFetch from '@hooks/useFetch';
 
 const ProductList = () => {
 
-    const {products,loading} = useGetProductsList();
+    const {data:products,loading} = useFetch("/products" );
     
     return(
         <div className='w-full h-auto mt-12 flex-column'>
