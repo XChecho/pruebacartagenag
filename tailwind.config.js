@@ -36,6 +36,9 @@ module.exports = {
         'auto1fr': 'auto 1fr',
         'at1fatat' : 'auto 1fr auto auto',
       },
+      width : {
+        '128':'30rem'
+      },
       height :{
         '128': '30rem'
       },
