@@ -34,7 +34,9 @@ const MyOrder = () => {
 	return (
 		<aside className="w-140 block h-auto p-6 box-border absolute bg-white right-0 top-10  rounded-md border border-solid border-primary">
 			<div className="flex ">
-				<img src={flechita} alt="arrow" onClick={()=> toggleOrder()} className='rotate-180 mr-4'/>
+				<button>
+					<img src={flechita} alt="arrow" onClick={()=> toggleOrder()} className='rotate-180 mr-4'/>
+				</button>
 				<p className="text-lag font-bold mb-2">My order</p>
 			</div>
 			<div className='overflow-y-scroll max-h-160 scrollbar-hide relative pb-2 border-b-2'>

@@ -34,7 +34,8 @@ module.exports = {
       },
       gridTemplateColumns:{
         'auto-fill': 'repeat(auto-fill, 320px)',
-        'auto1fr': '5fr 2fr 1fr',
+        'auto-fit': 'repeat(auto-fit, 320px)',
+        'auto1fr': '5fr 2fr 1fr', 
         'at1fatat' : 'auto 1fr 0.5fr auto auto',
       },
       width : {

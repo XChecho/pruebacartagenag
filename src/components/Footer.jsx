@@ -15,10 +15,10 @@ const Footer = () => {
                 <div className='lg:pl-5 lg:pt-0 pt-2'>
                     <p className='text-lag font-bold text-white'>Encuéntranos</p>
                     <li className='text-gray-400'>
-                        <a href="https://www.instagram.com/">Instagram</a> 
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a> 
                     </li>
                     <li className='text-gray-400'>
-                        <a href="https://www.facebook.com/">Facebook</a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
                     </li>
                 </div>
             </div>
