@@ -7,13 +7,10 @@ const HomeListItem = ({product}) => {
 			<div className="flex justify-center">
 				<img src={product.image} alt={product.title} className='w-60 h-60 rounded-2xl object-cover'/>
 			</div>
-				<div className="product-info">
+				<div>
 					<div>
 						<p>{product.title}</p>
 					</div>
-					{/* <figure onClick={() => handleClick(product)} >
-						<img src={logoaddcart} alt="" />
-					</figure> */}
 				</div>
 			
 		</div>
