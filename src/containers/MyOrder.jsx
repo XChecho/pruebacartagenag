@@ -14,8 +14,8 @@ import swal from 'sweetalert';
 const MyOrder = () => {
 	const { state, toggleOrder, addItem, removeItem, removeAllCart } = useContext(AppContext);
 
-	const sumTotalPrice = () => {
-		const reducer = (accumalator, currentValue) => accumalator + currentValue.price;
+	const sumTotal = () => {
+		const reducer = (accumalator, currentValue) => accumalator + (currentValue.price * currentValue.quantity);
 		const sum = state.cart.reduce(reducer, 0);
 		return sum;
 	}
@@ -24,7 +24,7 @@ const MyOrder = () => {
 		removeAllCart(state);
 		swal({
 			title: 'Proceso de compra finalizado',
-			text: `El proceso de compra finalizó el total de la compra fue $${sumTotalPrice()}`,
+			text: `El proceso de compra finalizó el total de la compra fue $${sumTotal()}`,
 			icon: 'success',
 			button: 'Aceptar',
 			timer: "5000"
@@ -46,15 +46,15 @@ const MyOrder = () => {
 						addItem={ () =>addItem(products.id)}
 						removeItem={ () => removeItem(products.id)}
 					/>
-				))}
+				))}	
 			</div>
 			<div className='relative mt-3'>
 				<div className="grid grid-cols-auto1fr bg-second items-center gap-4 mb-6 rounded-md px-2 py-3">
 					<p className='flex flex-col'>
 						<span className='text-med font-bold'>Total</span>
 					</p>
-					<p className='font-bold'>Articles</p>
-					<p className='text-end font-bold'>${sumTotalPrice()}</p>
+					<p className='font-bold'>Articulos</p>
+					<p className='text-end font-bold'>${sumTotal()}</p>
 				</div>
 				<button className="button_transition font-bold rounded-md  w-full text-med h-10" onClick={() => handleRemoveAll(state.cart)}>
 					Checkout

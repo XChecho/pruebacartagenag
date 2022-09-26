@@ -26,7 +26,8 @@ module.exports = {
         second: '#B6F2F7',
         third: '#6CECF5',
         fourth: '#577375',
-        fifth: '#55BAC2'
+        fifth: '#55BAC2',
+        load: '#737373'
       },
       screens: {
         'small': '320px'
@@ -52,6 +53,28 @@ module.exports = {
       textShadow: {
         '2xl': '1px 1px 5px rgb(33 34 43 / 20%)',
         '3xl': '0 0 3px rgba(0, 0, 0, .8), 0 0 5px rgba(0, 0, 0, .9)',
+      },
+      boxShadow: {
+        'load': '0 0 5px rgb(255,255,255,.3)',
+      },
+      animation: {
+        'ring-load': 'ring 2s linear infinite',
+      },
+      keyframes: {
+        'ring' : {
+          '0%': { 
+            transform: 'rotate(0deg)', 
+            boxShadow: '1px 5px 2px #347175'
+          },
+          '50%': { 
+            transform: 'rotate(180deg)', 
+            boxShadow: '1px 5px 2px #55BAC2'
+          },
+          '100%': { 
+            transform: 'rotate(360deg)', 
+            boxShadow: '1px 5px 2px #0456C8'
+          },
+        },
       },
     },
   },

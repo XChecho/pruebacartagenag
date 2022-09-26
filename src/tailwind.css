@@ -8,5 +8,5 @@ body {
 }
 
 .button_transition {
-    @apply bg-second text-black w-full cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-110 hover:bg-primary hover:text-white
+    @apply bg-second text-black w-full cursor-pointer transition-all duration-500 ease-in-out transform hover:bg-primary hover:text-white
 }

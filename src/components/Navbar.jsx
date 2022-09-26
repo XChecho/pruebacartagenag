@@ -23,7 +23,7 @@ const Navbar = () => {
                 <p className="text-xl text-white font-black pl-1">CARTAGENA GROUP SHOP</p>
             </div>
             <div className="flex space-x-8 list-none">
-                    <a className="font-bold text-md text-second hover:text-black" onClick={()=>navigate('/')}>Home</a>
+                    <a className="font-bold text-md text-second hover:text-black" onClick={()=>navigate('/')}>Inicio</a>
                     <a className="font-bold text-md text-second hover:text-black" onClick={()=>navigate('/product')}>Lista de productos</a>
             </div>
             <div className='rounded-full w-9 h-9 place-items-center flex justify-center bg-third' onClick={() => toggleOrder()}>

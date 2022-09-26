@@ -16,8 +16,9 @@ const useInitialState = () => {
             ...state,
             cart: [...state.cart, payload],
             });
+        }else{
+            payload.quantity = payload.quantity + 1 
         }
-        console.log({state})
     };
 
     const addItem = (productId) => {
@@ -31,7 +32,6 @@ const useInitialState = () => {
 
     const removeItem = (productId) => {
         const item = state.cart.find(element => element.id === productId)
-        console.log({item})
         item.quantity = item.quantity - 1
         setState({
             ...state,

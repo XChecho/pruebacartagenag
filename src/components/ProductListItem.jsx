@@ -1,9 +1,11 @@
 import React , {useContext} from 'react'
 import { useNavigate } from 'react-router-dom'
 
+//Components
+import ButtonAddCart from '@components/ButtonAddCart';
 
-//assets
-import logoAddCar from '@assets/icons/shopping-cart.svg';
+
+//Context
 import AppContext from '@context/AppContext';
 
 const ProductListItem = ({product}) => {
@@ -26,9 +28,9 @@ const ProductListItem = ({product}) => {
 					<div>
 					</div>
 				</div>
-				<button className='bg-fifth rounded-full w-9 h-9 place-items-center flex justify-center' onClick={() => handleClick(product)} >
-					<img src={logoAddCar} alt="" className='place-items-center' />
-				</button>
+				<div onClick={() => handleClick(product)}>
+					<ButtonAddCart />
+				</div>
 			</div>
 			<div className=' flex justify-center ' >
 				<button className='bg-second font-bold py-2 px-4 rounded-full transition-all duration-500 ease-in-out transform hover:scale-125 hover:bg-primary hover:text-white' onClick={()=>navigate(`/product/${product.id}`)} >Detalle</button>

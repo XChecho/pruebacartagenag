@@ -23,7 +23,9 @@ const MyOrderItem = ({ products, addItem, removeItem }) => {
 				<button className='text-med font-semibold' onClick={addItem}>+</button>
 			</div>
 			<p className='text-med font-bold' >${products.price}</p>
-			<img src={close} alt="close" onClick={() => handleRemove(products)} />
+			<button>
+				<img src={close} alt="close" onClick={() => handleRemove(products)} />
+			</button>
 		</div>
 	);
 }

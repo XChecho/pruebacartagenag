@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //Pages
 import Home from '@pages/Home';
-import ProductItem from '@pages/ProductItem';
+import ProductItemDesc from '@pages/ProductItemDesc';
 import ProductList from '@pages/ProductList';
 
 //Containers
@@ -27,7 +27,7 @@ const App = () => {
               <Routes className='absolute'>
                   <Route exact path="/" element={<Home />} />
                   <Route exact path="/product" element={<ProductList />} /> 
-                  <Route exact path="/product/:id" element={<ProductItem />} />
+                  <Route exact path="/product/:id" element={<ProductItemDesc />} />
               </Routes>
               <Footer />
           </Layout>
