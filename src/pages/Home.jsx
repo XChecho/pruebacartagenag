@@ -9,7 +9,7 @@ import HomeList from '@containers/HomeList';
 
 const Home = () => {
     return (
-        <div className="">
+        <div >
             <Banner />
             <HomeList />
             <AboutUs />

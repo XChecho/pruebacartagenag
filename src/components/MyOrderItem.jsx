@@ -22,7 +22,7 @@ const MyOrderItem = ({ products, addItem, removeItem }) => {
 				<span className='flex items-center'>{products.quantity}</span>
 				<button className='text-med font-semibold' onClick={addItem}>+</button>
 			</div>
-			<p className='text-med font-bold' >${products.price}</p>
+			<p className='text-med font-bold' >${products.price*products.quantity}</p>
 			<button>
 				<img src={close} alt="close" onClick={() => handleRemove(products)} />
 			</button>

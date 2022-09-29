@@ -12,7 +12,8 @@ module.exports = {
         second: '#B6F2F7',
         third: '#6CECF5',
         fourth: '#577375',
-        fifth: '#55BAC2'
+        fifth: '#55BAC2',
+        layout: '#BDD1D8'
       },
       fontSize: {
         xsm: ['10px'],
@@ -39,12 +40,15 @@ module.exports = {
         'at1fatat' : 'auto 1fr 0.5fr auto auto',
       },
       width : {
+        '125':'500px',
         '140':'35rem',
         '160':'40rem',
         '168':'42rem',
-
+        '400':'400%',
+        '19/20':'95%'
       },
       height :{
+        '75':'300px',
         '100':'400px',
         '120': '30rem'
       },
@@ -60,6 +64,7 @@ module.exports = {
       },
       animation: {
         'ring-load': 'ring 2s linear infinite',
+        'slider':'change 20s infinite ',
       },
       keyframes: {
         'ring' : {
@@ -75,6 +80,17 @@ module.exports = {
             transform: 'rotate(360deg)', 
             boxShadow: '1px 5px 2px #0456C8'
           },
+        },
+        'change' :{
+          '0%': {transform: 'translateX(0)'},
+          '20%': {transform: 'translateX(0)'},
+          '25%': {transform: 'translateX(-25%)'},
+          '45%': {transform: 'translateX(-25%)'},
+          '50%': {transform: 'translateX(-50%)'},
+          '70%': {transform: 'translateX(-50%)'},
+          '75%': {transform: 'translateX(-75%)'},
+          '95%': {transform: 'translateX(-75%)'},
+          '100%': {transform: 'translateX(0)'}
         },
       },
     },

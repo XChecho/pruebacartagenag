@@ -12,7 +12,7 @@ const ProductList = () => {
     const {data:products,loading} = useFetch("/products" );
     
     return(
-        <div className='w-full h-auto mt-12 flex-column'>
+        <div className='w-screen h-auto mt-12 flex-column'>
             <h1 className='h-auto text-3xl text-center font-bold py-4'>Listado de productos</h1>
             {loading 
             ? <Loading />

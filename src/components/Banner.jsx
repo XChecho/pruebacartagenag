@@ -1,21 +1,21 @@
 import React from 'react';
 
 //assets
-import pictureBanner from '@assets/images/fashionPic.jpg';
+import pictureBanner1 from '@assets/images/panoramic1.jpg';
+import pictureBanner2 from '@assets/images/fashionPic.jpg';
+import pictureBanner3 from '@assets/images/shopCart.jpg';
+import pictureBanner4 from '@assets/images/seleccion.jpg';
 
 const Banner = () => {
     return(
-        <div className="w-full h-3/4 lg:pt-5">
-            <div className="w-full h-full">
-                <div className="w-full h-full flex flex-col absolute py-4 items-center lg:space-y-20 lg:items-start lg:pt-36 lg:justify-start">
-                    <div className="hidden h-auto lg:w-3/4 lg:flex pb-6">
-                        <p className="text-4xl ml-16 font-bold text-second">A un click, y sin moverte de casa</p>
-                    </div>
-                </div>
-                <div 
-                    style={{backgroundImage: `url(${pictureBanner})`}} 
-                    className="w-full h-96 bg-cover"
-                ></div>
+        <div className="w-screen lg:pt-12">
+            <div className="m-auto h-96 overflow-hidden w-19/20">
+                <ul className="flex p-0 w-400 animate-slider">  
+                    <li className='w-full'><img src={pictureBanner2} alt="" className='w-full'/></li>
+                    <li className='w-full'><img src={pictureBanner1} alt="" className='w-full'/></li>
+                    <li className='w-full'><img src={pictureBanner3} alt="" className='w-full'/></li>
+                    <li className='w-full'><img src={pictureBanner4} alt="" className='w-full'/></li>
+                </ul>
             </div>
         </div>
     );

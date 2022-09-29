@@ -20,7 +20,7 @@ const Navbar = () => {
     return (
         <nav className="w-full h-12 flex bg-primary p-4 justify-between items-center fixed z-50 rounded-b-md">
             <div className="h-auto w-auto">
-                <p className="text-xl text-white font-black pl-1">CARTAGENA GROUP SHOP</p>
+                <p className="text-xl text-white font-black pl-1">FAKESTORE SHOP</p>
             </div>
             <div className="flex space-x-8 list-none">
                 <ul className='flex flex-row space-x-3'>

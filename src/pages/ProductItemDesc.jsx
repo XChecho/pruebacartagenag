@@ -27,7 +27,7 @@ const ProductItem = () => {
                 ?<Loading/>
                 :<div className='w-96 h-auto flex flex-col justify-center mt-10'>
                     <p className='text-xlg text-primary text-center'>{product.title}</p>
-                    <div className='flex justify-center py-2'>
+                    <div className='flex justify-center py-2 transition-all duration-500 ease-in-out transform hover:scale-125'>
                         <img src={product.image} alt={product.title} className='w-auto h-80 rounded-2xl'/>
                     </div>
                     <div className='flex justify-around pb-2'>

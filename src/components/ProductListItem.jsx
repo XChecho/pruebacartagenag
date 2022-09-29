@@ -18,9 +18,9 @@ const ProductListItem = ({product}) => {
 	} 
 	
     return (
-    	<div className="w-80 h-128 px-8 py-2 bg-white rounded border-4 ">
+    	<div className="w-80 h-128 px-8 py-2 bg-white rounded border-4 hover:shadow-2xl">
 			<div className='flex justify-center'>
-				<img src={product.image} alt={product.title} className='w-auto h-60 rounded-2xl object-contain'/>
+				<img src={product.image} alt={product.title} className='w-auto h-60 rounded-2xl object-contain '/>
 			</div>
 			<div className="flex justify-between mt-5">
 				<div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Lauyout = ({children}) => {
     return(
-        <div className='w-full h-screen absolute'>
+        <div className='h-screen absolute bg-layout'>
             {children}
         </div>
     );

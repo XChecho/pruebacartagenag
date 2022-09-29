@@ -56,6 +56,7 @@ const MyOrder = () => {
 						<span className='text-med font-bold'>Total</span>
 					</p>
 					<p className='font-bold'>Articulos</p>
+					{console.log(state.cart)}
 					<p className='text-end font-bold'>${sumTotal()}</p>
 				</div>
 				<button className="button_transition font-bold rounded-md  w-full text-med h-10" onClick={() => handleRemoveAll(state.cart)}>
